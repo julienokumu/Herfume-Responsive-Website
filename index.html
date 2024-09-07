@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herfume | CodewithJulien</title>
+    <link href="./output.css" rel="stylesheet" />
+
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--Remix Icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header id="navbar" class="bg-bodyColor fixed w-full top-0 left-0 z-50">
+      <nav class="container flex justify-between items-center h-16 sm:h-20">
+        <div class="font-DancingScript text-2xl sm:text-5xl">Herfume</div>
+
+        <div
+          id="nav-menu"
+          class="bg-cardColor absolute top-0 left-[-100%] duration-300 min-h-[80vh] w-full flex items-center justify-center md:static md:min-h-fit md:w-auto md:bg-transparent"
+        >
+          <ul class="flex md:flex-row flex-col items-center gap-8">
+            <li>
+              <a href="#home" class="nav-link active">Home</a>
+            </li>
+
+            <li>
+              <a href="#collection" class="nav-link">Collection</a>
+            </li>
+
+            <li>
+              <a href="#popular" class="nav-link">Popular</a>
+            </li>
+
+            <li>
+              <a href="#about" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+            <div class="cursor-pointer z-50 text-xl sm:text-3xl">
+            <i class="ri-menu-2-line" id="hamburger"></i>
+            </div>
+      </div>
+
+      </nav>
+
+     
+    </header>
+
+    <main>
+        <div id="hero" class="container xl:min-h-screen relative mt-16 sm:mt-20 py-10">
+            <div class="absolute top-[40%] lg:top-1/2 md:top-[45%] sm:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-10">
+                <p class="text-[124px] xl:text-[260px] leading-none sm:text-[170px] font-black text-[#241826] opacity-50">
+                  FRA <br>
+                  GRA <br>
+                  NCE
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center">
+                <div class=" hero__big-text text-[45px] md:text-[90px] sm:text-[70px] lg:text-[120px] xl:text-[180px] font-bold uppercase">Celestia</div>
+
+                <div class="hero__image relative -mt-16 sm:-mt-24 md:-mt-32 xl:-mt-52">
+                    <img src="assets/images/hero.png" alt="hero_img" class="w-full mx-auto md:w-1/2 lg:w-1/3 xl:w-1/2">
+                    <p class="absolute bottom-[20%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center text-4xl font-bold font-DancingScript xl:text-[65px]">Made of stardust</p>
+                </div>
+
+                <div class="hero__content flex flex-col items-center w-full gap-5 md:justify-between md:gap-1 md:flex-row">
+                    <p class="max-w-80">
+                      Celestia is a unique perfume, drawn from the rarest meteorites, and is the only one to be sourced from the stars
+                    </p>
+                    <button class="btn">TRY NOW</button>
+                    <p class="max-w-80 md:text-right">
+                      Celestia is a unique perfume, drawn from the rarest meteorites, and is the only one to be sourced from the stars
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <section id="collection" class="bg-sectionColor">
+          <div class="container">
+            <div class="collection__top flex flex-col items-center gap-3 text-center mb-20 md:md-28">
+              <h2 class="title text-titleColor">Collection</h2>
+              <p class="subtitle max-w-2xl">Things you need to know</p>
+            </div>
+
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-8">
+              <!--Card 1-->
+              <div class="collection__card relative bg-cardColor rounded-xl px-10 py-20">
+                <img src="assets/images/collection-1.png" alt="collection_image" class="w-40 absolute -top-20 left-0">
+                <div class="space-y-5">
+                  <h2 class="cardtitle">Real Stardust</h2>
+                  <p>We've sourced the finest meteorites and have extracted the very essence of the universe</p>
+                </div>
+
+                <div class="bg-titleColor w-20 h-20 rounded-full flex items-center justify-center text-2xl border-8 border-sectionColor absolute -right-3 -bottom-3 ">
+                  <i class="ri-arrow-right-line hover:translate-x-1 duration-300"></i>
+                </div>
+              </div>
+              
+
+              <!--Card 2-->
+              <div class="collection__card relative bg-cardColor rounded-xl px-10 py-20">
+                <img src="assets/images/collection-2.png" alt="collection_image" class="w-40 absolute -top-20 left-0">
+                <div class="space-y-5">
+                  <h2 class="cardtitle">Velvet Ember</h2>
+                  <p>A smoldering elegance wrapped in deep sensuality. Lush notes of black cherry and tobacco melt into smooth vanilla and smoky patchouli, creating a fiery yet velvety allure.</p>
+                </div>
+
+                <div class="bg-titleColor w-20 h-20 rounded-full flex items-center justify-center text-2xl border-8 border-sectionColor absolute -right-3 -bottom-3 ">
+                  <i class="ri-arrow-right-line hover:translate-x-1 duration-300"></i>
+                </div>
+              </div>
+            
+
+
+              <!--Card 3-->
+              <div class="collection__card relative bg-cardColor rounded-xl px-10 py-20">
+                <img src="assets/images/collection-3.png" alt="collection_image" class="w-40 absolute -top-20 left-0">
+                <div class="space-y-5">
+                  <h2 class="cardtitle">Midnight Zephyr</h2>
+                  <p>A delicate breeze that whispers of mystery and enchantment. Notes of jasmine and black currant dance with midnight violet and sandalwood, capturing the allure of a moonlit evening</p>
+                </div>
+
+                <div class="bg-titleColor w-20 h-20 rounded-full flex items-center justify-center text-2xl border-8 border-sectionColor absolute -right-3 -bottom-3 ">
+                  <i class="ri-arrow-right-line hover:translate-x-1 duration-300"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="popular">
+          <div class="container">
+            <div class="popular__top flex flex-col items-center gap-3 text-center mb-20 md:md-28">
+              <h2 class="title text-titleColor">Popular</h2>
+              <p class="subtitle max-w-2xl">Things you need to know</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row item-center gap-5 lg:gap-10">
+              <!--Card 1-->
+              <div class="popular__card-1 bg-cardColor w-full py-5 px-3 md:py-8 md:px-10 xl:py-10 xl:px-12 flex justify-between items-center md:w-1/2">
+                <div class="w-3/5">
+                  <div class="max-w-56 xl:max-w-full">
+                    <p class="text-xs xl:text-base pb-2">TOP PICKS</p>
+                    <p class="cardtitle-2">Best Collection</p>
+                    <div class="my-3 md:my-5">
+                      Use code: CODEWITHJULIEN Get <br>
+                      25% off for all items!
+                    </div>
+                    <button class="btn2 mt-5">Shop now</button>
+                  </div>
+                </div>
+                <div class="w-2/5">
+                  <img src="assets/images/popular-1.png" alt="popular_image" class="ml-auto w-full">
+                </div>
+                
+              </div>
+              <!--Card 2-->
+               <div class="popular__card-2 bg-cardColor w-full py-5 px-3 md:py-8 md:px-10 xl:py-10 xl:px-12 flex justify-between items-center md:w-1/2">
+                <div class="w-3/5">
+                  <div class="max-w-56 xl:max-w-full">
+                    <p class="text-xs xl:text-base pb-2">TOP PICKS</p>
+                    <p class="cardtitle-2">Best Collection</p>
+                    <div class="my-3 md:my-5">
+                      Use code: CODEWITHJULIEN Get <br>
+                      25% off for all items!
+                    </div>
+                    <button class="btn2 mt-5">Shop now</button>
+                  </div>
+                </div>
+                <div class="w-2/5">
+                  <img src="assets/images/popular-2.png" alt="popular_image" class="ml-auto w-full">
+                </div>
+               </div>
+               <!--Card 3-->
+               <div class="popular__card-3 bg-cardColor text-center mt-5 lg:mt-10 py-10 px-3 bg-cover bg-center" style="background-image:linear-gradient(to right, #33003390, #330033), url('assets/images/popular_banner.jpg') ;">
+                <div class="sm:max-w-72 mx-auto">
+                  <p class="cardtitle-2">Collection Arrived</p>
+                  <p class="my-3 md:my-5">You have no items & Are you ready to use ? Come & shop with us</p>
+                  <p>Price from: <span class="text-2xl font-bold">4500KSH</span></p>
+                  <button class="btn2 mt-10">Shop now</button>
+                </div>
+               </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bg-cardColor">
+          <div class="container">
+            <div class="flex flex-col lg:flex-row justify-between gap-10">
+              <!--Item 1-->
+              <div class="banner__content flex-1 flex gap-5 max-w-md">
+                <div class="text-5xl">
+                  <i class="ri-plane-line"></i>
+                </div>
+
+                <div class="space-y-4">
+                  <p class="uppercase font-bold">EU Free Delivery</p>
+                  <p class="leading-relaxed">
+                    Free delivery on all orders from EU with price more than 9000KSH
+                  </p>
+                </div>
+              </div>
+
+              <!--Item 2-->
+              <div class="banner__content flex-1 flex gap-5 max-w-md">
+                <div class="text-5xl">
+                  <i class="ri-lock-2-line"></i>
+                </div>
+
+                <div class="space-y-4">
+                  <p class="uppercase font-bold">Onlin Support 24/7</p>
+                  <p class="leading-relaxed">
+                    We're here to support to you. Let's shopping now!
+                  </p>
+                </div>
+              </div>
+
+              <!--Item 3-->
+              <div class="banner__content flex-1 flex gap-5 max-w-md">
+                <div class="text-5xl">
+                  <i class="ri-arrow-go-back-line"></i>
+                </div>
+
+                <div class="space-y-4">
+                  <p class="uppercase font-bold">EU Free Delivery</p>
+                  <p class="leading-relaxed">
+                    30 Days money back guarantee no question asked!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="bg-sectionColor">
+          <div class="container">
+            <div class="about__top flex flex-col items-center gap-3 text-center mb-20 md:md-28">
+              <h2 class="title text-titleColor">About Celestial</h2>
+              <p class="subtitle max-w-2xl">Things you need to know</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center xl:items-center gap-5 lg:gap-10 mt-20">
+              <div class="about__image w-full md:w-1/2">
+                <img src="assets/images/about.png" alt="about_image">
+              </div>
+
+              <div class="about__content w-full md:w-1/2">
+                <div>
+                  <p class="text-xs xl:text-base">TOP PICKS</p>
+                  <p class="cardtitle-2">BEST COLLECTION</p>
+                  <p class="mt-3 md:mt-5">At Herfume, we believe that fragrance is an art form—an invisible accessory that defines mood, memory, and identity. Our passion lies in crafting exquisite scents that tell a story, evoke emotion, and capture moments in time. Each of our perfumes is a blend of the finest ingredients, sourced from around the world, and masterfully composed by expert perfumers who understand the nuances of both tradition and innovation.</p>
+                  <br>
+                  <p>Whether you're drawn to the elegance of floral bouquets, the warmth of earthy tones, or the freshness of citrus notes, we offer a fragrance for every personality and occasion. At Herfume, we invite you to embark on a sensory journey, where scent becomes a reflection of your individuality.</p>
+                  <button class="btn2 mt-5 lg:mt-10">Shop Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <footer class="footer__content container py-10">
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="w-full md:w-1/2">
+          <p class="cardtitle">Newsletter</p>
+          <p>Sign up for our free video course and urban garden inspiration</p>
+        </div>
+
+        <div class="w-full md:w-1/2">
+          <div class="flex flex-col md:flex-row gap-1">
+            <input type="email" placeholder="Your Email Address" class="w-full px-5 py-3 text-bodyColor outline-none">
+            <button class="btn2">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center mt-10 opacity-50">Copyright &copy; 2024 CodewithJulien. All rights reserved.</p>
+    </footer>
+
+    <a href="#" id="scroll-up" class="fixed right-10  bg-titleColor -bottom-1/2 px-2 py-1 md:px-4 md:py-2 rounded-sm text-xs md:text-lg z-50 hover:-translate-y-1 ease-in duration-300">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
